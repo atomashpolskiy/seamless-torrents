@@ -69,7 +69,7 @@ public class DefaultClientService implements ClientService {
                     Collection<BtClient> clients = runtime.get().getClients();
                     boolean active = false;
                     for (BtClient client : clients) {
-                        if (client.isActive()) {
+                        if (client.isStarted()) {
                             active = true;
                             break;
                         }
