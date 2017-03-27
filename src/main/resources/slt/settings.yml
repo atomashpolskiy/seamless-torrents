@@ -1,0 +1,7 @@
+config:
+  sourceDirs:
+    - ~/Downloads
+  queueDir: ~/.com.github.atomashpolskiy.slt/queue
+  outputDir: ~/Downloads
+  runtime:
+    acceptorPort: 6891
