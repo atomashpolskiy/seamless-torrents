@@ -223,4 +223,31 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>assembly</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <version>2.5.3</version>
+                        <configuration>
+                            <descriptor>src/assembly/assembly.xml</descriptor>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>create-archive</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>single</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
 </project>
